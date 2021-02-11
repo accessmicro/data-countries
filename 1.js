@@ -33,6 +33,7 @@ dataPromise
                 let eleImg = document.createElement('img')
 
                 eleWrapper.className = 'wrapper'
+                eleWrapper.setAttribute('data-aos', 'zoom-in')
                 eleContent__infor.className = 'content__infor'
                 ele1.className = 'content__flag'
                 ele2.className = 'content__name'
@@ -353,8 +354,8 @@ dataPromise
         let funcReturnNumStat = (arr) => {
             return `${arr.length} countries satisfied the search criteria`
         }
-        function funcArrLan(arr){
-            let str = arr.map(a=>{
+        function funcArrLan(arr) {
+            let str = arr.map(a => {
                 return a.name
             }
             ).join(', ')
