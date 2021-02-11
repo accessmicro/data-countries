@@ -12,7 +12,6 @@ let dataPromise = new Promise((resolve, reject) => {
 })
 dataPromise
     .then(countries => {
-        console.log(countries)
         document.querySelector('.header__sumCountries').textContent = `Currently, we have ${countries.length} countries`
         let eleNameCou = document.querySelector('#nameCou')
         let eleCapitalCou = document.querySelector('#capitalCou')
