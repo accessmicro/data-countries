@@ -3,7 +3,7 @@ document.querySelector('#reset').addEventListener('click', e => {
     location.href = "index.html"
 
 })
-let countriesAPI = 'https://restcountries.com/v3.1/all'
+let countriesAPI = 'https://restcountries.com/v2/all'
 
 let dataPromise = new Promise((resolve, reject) => {
     let data = fetch(countriesAPI)
